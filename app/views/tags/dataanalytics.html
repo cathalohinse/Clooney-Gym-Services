@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<div class="ui raised segment">
+    <b><div class="ui four column grid">
+    <meta charset="UTF-8">
+    <div class="column">
+        <div class="ui segment">
+            <i class="user huge icon"></i>
+            <br>${_member.getName()}
+        </div>
+    </div>
+        <div class="column">
+            <div class="ui segment">
+                <i class="clock huge red icon"></i>
+                <br>${_member.isIdealBodyWeight()}
+            </div>
+        </div>
+    <div class="column">
+        <div class="ui segment">
+            <i class="heartbeat huge icon"></i>
+            <span class="ui huge black text">${_member.BMICalculation()}</span>
+            <br>BMI
+        </div>
+    </div>
+        <div class="column">
+            <div class="ui segment">
+                <i class="ambulance huge icon"></i>
+                <br>${_member.determineBMICategory()}
+            </div>
+        </div>
+    </div>
+    </b>
+</div>
+</html>

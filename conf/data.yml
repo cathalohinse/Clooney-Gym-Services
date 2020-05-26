@@ -1,0 +1,68 @@
+Assessment(a1):
+  weight: 123.3
+  chest: 45.0
+  thigh: 12.5
+  upperArm: 23.3
+  waist: 32.0
+  hips: 38.0
+  comment: Hello there
+
+Assessment(a2):
+  weight: 132.4
+  chest: 23.0
+  thigh: 5.5
+  upperArm: 1.3
+  waist: 2.0
+  hips: 99.0
+  comment: Goodbye
+
+Assessment(a3):
+  weight: 1
+  chest: 4
+  thigh: 1
+  upperArm: 2
+  waist: 3
+  hips: 3
+  comment: Up the 'ra
+
+
+Member(m1):
+  email: cathalohinse@gmail.com
+  name: CathalOhInse
+  address: Clooney
+  password: q
+  gender: Male
+  height: 2.0
+  startWeight: 93
+  assessments:
+    - a1
+    - a2
+
+Member(m2):
+  email: cathalohinse@yahoo.com
+  name: CathalOhInse
+  address: Clooney
+  password: q
+  gender: Male
+  height: 2.0
+  startWeight: 93
+  assessments:
+    - a3
+
+Member(m3):
+    email: maryhenchy@gmail.com
+    name: Mary
+    address: Sraithin
+    password: q
+    gender: Female
+    height: 2.0
+    startWeight: 93
+    assessments:
+
+Trainer(t1):
+  email: DantheMan@gmail.com
+  name: DanShanahan
+  password: q
+
+
+

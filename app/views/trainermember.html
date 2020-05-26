@@ -1,0 +1,12 @@
+#{extends 'main.html' /}
+#{set title:'TrainerMember' /}
+#{menu id:"dashboard"/}
+
+<div class="ui raised segment">
+    <h2 class="ui header">
+        ${member.name}
+        <br>${member.email}
+    </h2>
+    #{dataanalytics member:member /}
+    #{addcomment member:member /}
+</div>

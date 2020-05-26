@@ -1,0 +1,38 @@
+#{list items:_member.assessments, as:'assessment'}
+<div class = "ui raised segment">
+    <section>
+        <table class="ui fixed table">
+            <thead>
+            <tr>
+                <th>Weight</th>
+                <th>Chest</th>
+                <th>Thigh</th>
+                <th>Upper Arm</th>
+                <th>Waist</th>
+                <th>Hips</th>
+                <th>Date/Time</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>${assessment.weight}</td>
+                <td>${assessment.chest}</td>
+                <td>${assessment.thigh}</td>
+                <td>${assessment.upperArm}</td>
+                <td>${assessment.waist}</td>
+                <td>${assessment.hips}</td>
+                <td>${assessment.dateTime}</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+    <section>
+        <div class="ui raised segment">
+            <td>${assessment.comment}</td>
+            <br><a href = "/assessments/${assessment.id}/writecomment">
+            <br><button class="ui blue submit button">Add Comment</button>
+            </a>
+        </div>
+    </section>
+</div>
+#{/list}

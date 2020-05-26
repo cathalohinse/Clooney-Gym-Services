@@ -1,0 +1,39 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+#{menu id:"writecomment"/}
+
+<form class="ui stacked segment form" action="/assessments/${assessment.id}/addcomment" method="POST">
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+            <th>Comment</th>
+            <th>Date/Time</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>${assessment.weight}</td>
+            <td>${assessment.chest}</td>
+            <td>${assessment.thigh}</td>
+            <td>${assessment.upperArm}</td>
+            <td>${assessment.waist}</td>
+            <td>${assessment.hips}</td>
+            <td>${assessment.comment}</td>
+            <td>${assessment.dateTime}</td>
+        </tr>
+        </tbody>
+    </table>
+    <section class = ui segment>
+        <div class="sixteen wide field">
+            <label>Comment</label>
+            <textarea placeholder="Comment" type="text" name="comment" rows="2"></textarea>
+            <button class="ui blue submit button">Add Comment</button>
+        </div>
+    </section>
+</form>

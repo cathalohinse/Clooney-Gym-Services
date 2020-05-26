@@ -1,0 +1,37 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+#{welcomemenu id:"admin"/}
+
+<div class="ui segment">
+  <header class="ui header">
+    Assessment
+  </header>
+  <table class="ui fixed table">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Weight</th>
+      <th>Chest</th>
+      <th>Thigh</th>
+      <th>Upper Arm</th>
+      <th>Waist</th>
+      <th>Hips</th>
+      <th>Comment</th>
+    </tr>
+    </thead>
+    <tbody>
+    #{list items:assessments, as:'assessment'}
+    <tr>
+      <td>${assessment.id}</td>
+      <td>${assessment.weight}</td>
+      <td>${assessment.chest}</td>
+      <td>${assessment.thigh}</td>
+      <td>${assessment.upperArm}</td>
+      <td>${assessment.waist}</td>
+      <td>${assessment.hips}</td>
+      <td>${assessment.comment}</td>
+    </tr>
+    #{/list}
+    </tbody>
+  </table>
+</div>

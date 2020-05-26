@@ -1,0 +1,13 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+#{menu id:"dashboard"/}
+
+#{list items:members, as:'member'}
+<div class="ui segment">
+  <h2 class="ui header">
+    ${member.name}
+  </h2>
+  <p> Home: ${member.address} </p>
+  <a href="/members/${member.id}/trainermember">View</a>
+</div>
+#{/list}

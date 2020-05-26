@@ -1,0 +1,32 @@
+<table class="ui celled table">
+    <thead class = "single line">
+    <tr>
+        <th>Date</th>
+        <th>Weight</th>
+        <th>Chest</th>
+        <th>Thigh</th>
+        <th>Upper Arm</th>
+        <th>Waist</th>
+        <th>Hips</th>
+        <th>Trend</th>
+        <th>Feedback</th>
+        <th>Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    #{list items:_member.assessments, as:'assessment'}
+    <tr>
+        <td>${assessment.dateTime}</td>
+        <td>${assessment.weight}</td>
+        <td>${assessment.chest}</td>
+        <td>${assessment.thigh}</td>
+        <td>${assessment.upperArm}</td>
+        <td>${assessment.waist}</td>
+        <td>${assessment.hips}</td>
+        <td>${assessment.trend(_member, _member.assessments, assessment)}</td>
+        <td>${assessment.comment}</td>
+        <td><a href="/assessments/${assessment.id}/deleteassessment"><i class="big ui trash icon"></i></a></td>
+    </tr>
+    #{/list}
+    </tbody>
+</table>
