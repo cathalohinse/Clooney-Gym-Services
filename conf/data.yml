@@ -17,13 +17,13 @@ Assessment(a2):
   comment: Goodbye
 
 Assessment(a3):
-  weight: 1
+  weight: 93
   chest: 4
   thigh: 1
   upperArm: 2
   waist: 3
   hips: 3
-  comment: Up the 'ra
+  comment: Keep up the good work
 
 
 Member(m1):

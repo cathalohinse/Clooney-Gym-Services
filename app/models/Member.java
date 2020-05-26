@@ -85,7 +85,7 @@ public class Member extends Model {
 
     private double BMICalculation(){
         if(assessments.size()==0) {
-            return 0.0;
+            return startWeight / Math.pow(height, 2);
         }
         else{
             return assessments.get(assessments.size()-1).getWeight() / Math.pow(height, 2);
